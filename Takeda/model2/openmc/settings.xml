@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<settings>
+
+  <!-- Parmeters for criticality calculation -->
+  <eigenvalue>
+    <batches>5000</batches>
+    <inactive>500</inactive>
+    <particles>1000</particles>
+  </eigenvalue>
+
+  <source>
+    <space type="box">
+      <parameters>
+         0.0  0.0  20.0
+        55.0 55.0 130.0
+      </parameters>
+    </space>
+  </source>
+
+  <!-- Establish statepoints to aid in examining convergence -->
+  <state_point>
+    <interval>5000</interval>
+    <source_write>true</source_write>
+  </state_point>
+
+  <output>
+    <cross_sections>true</cross_sections>
+    <summary>true</summary>
+    <tallies>true</tallies>
+  </output>
+
+  <energy_mode>multi-group</energy_mode>
+  <cross_sections>../mg_cross_sections.xml</cross_sections>
+
+</settings>

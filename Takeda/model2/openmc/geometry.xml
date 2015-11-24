@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<geometry>
+  <!-- Definition of Cells -->
+  <cell id="1" material="1" universe="1" />  <!-- Core -->
+  <cell id="2" material="2" universe="2" />  <!-- Radial Blanket -->
+  <cell id="3" material="3" universe="3" />  <!-- Axial Blanket -->
+  <cell id="4" material="4" universe="4" />  <!-- CR -->
+  <cell id="5" material="5" universe="5" />  <!-- CRP -->
+
+  <!-- Define layers of lattices -->
+  <!-- Lower blanket region (w/ CRP) -->
+  <lattice id="100">
+    <outer>0</outer>
+    <dimension> 14 14 </dimension>
+    <lower_left> 0 0 </lower_left>
+    <pitch> 5 5 </pitch>
+    <universes>
+      3 3 3 3 3 3 3 3 3 3 3 3 3 3
+      3 3 3 3 3 3 3 3 3 3 3 3 3 3
+      3 3 3 3 3 3 3 3 3 3 3 3 3 3
+      3 3 3 3 3 3 3 3 3 3 3 3 3 3
+      3 3 3 3 3 3 3 3 3 3 3 3 3 3
+      3 3 3 3 3 3 3 3 3 3 3 3 3 3
+      3 3 3 3 3 3 3 3 3 3 3 3 3 3
+      3 3 3 3 3 3 3 3 3 3 3 3 3 3
+      3 3 3 3 3 3 3 3 3 3 3 3 3 3
+      3 3 3 3 3 3 3 3 3 3 3 3 3 3
+      3 3 3 3 3 3 3 3 3 3 3 3 3 3
+      3 3 3 3 3 3 3 3 3 3 3 3 3 3
+      3 3 3 3 3 3 3 3 3 3 3 3 3 3
+      3 3 3 3 3 3 3 5 5 3 3 3 3 3
+    </universes>
+  </lattice>
+
+  <!-- Lower core lattice -->
+  <lattice id="101">
+    <outer>0</outer>
+    <dimension> 14 14 </dimension>
+    <lower_left> 0 0 </lower_left>
+    <pitch> 5 5 </pitch>
+    <universes>
+      2 2 2 2 2 2 2 2 2 2 2 2 2 2
+      2 2 2 2 2 2 2 2 2 2 2 2 2 2
+      2 2 2 2 2 2 2 2 2 2 2 2 2 2
+      1 1 1 2 2 2 2 2 2 2 2 2 2 2
+      1 1 1 1 1 1 2 2 2 2 2 2 2 2
+      1 1 1 1 1 1 1 1 2 2 2 2 2 2
+      1 1 1 1 1 1 1 1 1 2 2 2 2 2
+      1 1 1 1 1 1 1 1 1 2 2 2 2 2
+      1 1 1 1 1 1 1 1 1 1 2 2 2 2
+      1 1 1 1 1 1 1 1 1 1 2 2 2 2
+      1 1 1 1 1 1 1 1 1 1 2 2 2 2
+      1 1 1 1 1 1 1 1 1 1 1 2 2 2
+      1 1 1 1 1 1 1 1 1 1 1 2 2 2
+      1 1 1 1 1 1 1 5 5 1 1 2 2 2
+    </universes>
+  </lattice>
+
+  <!-- Upper core lattice -->
+  <lattice id="102">
+    <outer>0</outer>
+    <dimension> 14 14 </dimension>
+    <lower_left> 0 0 </lower_left>
+    <pitch> 5 5 </pitch>
+    <universes>
+      2 2 2 2 2 2 2 2 2 2 2 2 2 2
+      2 2 2 2 2 2 2 2 2 2 2 2 2 2
+      2 2 2 2 2 2 2 2 2 2 2 2 2 2
+      1 1 1 2 2 2 2 2 2 2 2 2 2 2
+      1 1 1 1 1 1 2 2 2 2 2 2 2 2
+      1 1 1 1 1 1 1 1 2 2 2 2 2 2
+      1 1 1 1 1 1 1 1 1 2 2 2 2 2
+      1 1 1 1 1 1 1 1 1 2 2 2 2 2
+      1 1 1 1 1 1 1 1 1 1 2 2 2 2
+      1 1 1 1 1 1 1 1 1 1 2 2 2 2
+      1 1 1 1 1 1 1 1 1 1 2 2 2 2
+      1 1 1 1 1 1 1 1 1 1 1 2 2 2
+      1 1 1 1 1 1 1 1 1 1 1 2 2 2
+      1 1 1 1 1 1 1 4 4 1 1 2 2 2
+    </universes>
+  </lattice>
+
+  <!-- Upper blanket region (w/ CR) -->
+  <lattice id="103">
+    <outer>0</outer>
+    <dimension> 14 14 </dimension>
+    <lower_left> 0 0 </lower_left>
+    <pitch> 5 5 </pitch>
+    <universes>
+      3 3 3 3 3 3 3 3 3 3 3 3 3 3
+      3 3 3 3 3 3 3 3 3 3 3 3 3 3
+      3 3 3 3 3 3 3 3 3 3 3 3 3 3
+      3 3 3 3 3 3 3 3 3 3 3 3 3 3
+      3 3 3 3 3 3 3 3 3 3 3 3 3 3
+      3 3 3 3 3 3 3 3 3 3 3 3 3 3
+      3 3 3 3 3 3 3 3 3 3 3 3 3 3
+      3 3 3 3 3 3 3 3 3 3 3 3 3 3
+      3 3 3 3 3 3 3 3 3 3 3 3 3 3
+      3 3 3 3 3 3 3 3 3 3 3 3 3 3
+      3 3 3 3 3 3 3 3 3 3 3 3 3 3
+      3 3 3 3 3 3 3 3 3 3 3 3 3 3
+      3 3 3 3 3 3 3 3 3 3 3 3 3 3
+      3 3 3 3 3 3 3 4 4 3 3 3 3 3
+    </universes>
+  </lattice>
+
+  <!-- Build axial surfaces so we can start stacking lattices -->
+  <surface id="30" type="z-plane" coeffs="0.0"   boundary="vacuum" />
+  <surface id="31" type="z-plane" coeffs="20.0"  />
+  <surface id="32" type="z-plane" coeffs="75.0"  />
+  <surface id="33" type="z-plane" coeffs="130.0" />
+  <surface id="34" type="z-plane" coeffs="150.0" boundary="vacuum" />
+
+  <!-- Build xy surfaces for problem boundaries -->
+  <surface id="10" type="x-plane" coeffs="0.0"   boundary="reflective" />
+  <surface id="11" type="x-plane" coeffs="70.0"  boundary="vacuum" />
+  <surface id="20" type="y-plane" coeffs="0.0"   boundary="reflective" />
+  <surface id="21" type="y-plane" coeffs="70.0"  boundary="vacuum" />
+
+  <!-- Build cells for lattices, bottom up -->
+  <cell id="10" fill="100" region="10 -11 20 -21 30 -31" />
+  <cell id="11" fill="101" region="10 -11 20 -21 31 -32" />
+  <cell id="12" fill="102" region="10 -11 20 -21 32 -33" />
+  <cell id="13" fill="103" region="10 -11 20 -21 33 -34" />
+
+</geometry>

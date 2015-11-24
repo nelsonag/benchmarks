@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<materials>
+
+  <default_xs>71c</default_xs>
+
+  <!-- Core -->
+  <material id="1">
+    <density units="macro" />
+    <macroscopic name="Core" />
+  </material>
+
+  <!-- Radial Blanket -->
+  <material id="2">
+    <density units="macro" />
+    <macroscopic name="RIBlank" />
+  </material>
+
+  <!-- Axial Blanket -->
+  <material id="3">
+    <density units="macro" />
+    <macroscopic name="AxBlank" />
+  </material>
+
+  <!-- CR; to easiest generate case 1 set CR equal to CRP -->
+  <material id="4">
+    <density units="macro" />
+    <macroscopic name="CRP" />
+  </material>
+
+  <!-- CRP -->
+  <material id="5">
+    <density units="macro" />
+    <macroscopic name="CRP" />
+  </material>
+
+</materials>
