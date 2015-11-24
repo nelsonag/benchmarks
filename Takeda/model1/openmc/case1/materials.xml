@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<materials>
+
+  <default_xs>71c</default_xs>
+
+  <!-- Core -->
+  <material id="1">
+    <density units="macro" />
+    <macroscopic name="Core" />
+  </material>
+
+  <!-- Empty -->
+  <material id="2">
+    <density units="macro" />
+    <macroscopic name="Empty" />
+  </material>
+
+  <!-- Reflector -->
+  <material id="3">
+    <density units="macro" />
+    <macroscopic name="Refl" />
+  </material>
+
+</materials>

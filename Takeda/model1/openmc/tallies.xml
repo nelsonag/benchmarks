@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<tallies>
+
+  <tally id="1">
+    <filter type="mesh" bins="1" />
+    <filter type="energy" bins="1.0E-11 0.68256E-6 10.0"/>
+    <scores>flux fission</scores>
+  </tally>
+
+  <mesh>
+    <id>1</id>
+    <type>rectangular</type>
+    <lower_left> 0.0 0.0 0.0 </lower_left>
+    <upper_right> 25.0 25.0 25.0 </upper_right>
+    <dimension> 10 10 10 </dimension>
+  </mesh>
+
+  <assume_separate>false</assume_separate>
+
+</tallies>

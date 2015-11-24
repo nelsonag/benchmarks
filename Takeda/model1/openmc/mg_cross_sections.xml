@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<library>
+  <groups> 2 </groups>
+  <group_structure>
+    1.0E-11 0.68256E-6 10.0
+  </group_structure>
+
+  <xsdata>
+    <name>Core.71c</name>
+    <kT> 2.53E-8 </kT>
+    <order>0</order>
+    <fissionable>true</fissionable>
+
+    <!-- Total is the transport in the benchmark -->
+    <total>      2.23775E-1 1.03864E0  </total>
+    <absorption> 8.52709E-3 1.58196E-1 </absorption>
+    <scatter>
+      1.92423E-1 2.28253E-2
+      0.00000000 8.80439E-1
+    </scatter>
+
+    <!-- Fission is not provided, so we will divide nu-fission (provided)
+    by 2.43 to obtain fission -->
+    <nu_fission> 9.09319E-3 2.90183E-1 </nu_fission>
+    <fission>    3.74205E-3 1.19417E-1 </fission>
+    <chi>        1.0        0.0        </chi>
+
+  </xsdata>
+
+  <xsdata>
+    <name>Refl.71c</name>
+    <kT> 2.53E-8 </kT>
+    <order>0</order>
+    <fissionable>false</fissionable>
+
+    <!-- Total is the transport in the benchmark -->
+    <total>      2.50367E-1 1.64482E0  </total>
+    <absorption> 4.16392E-4 2.02999E-2 </absorption>
+    <scatter>
+      1.93446E-1 5.65042E-2
+      0.00000000 1.62452
+    </scatter>
+
+  </xsdata>
+
+  <xsdata>
+    <name>CR.71c</name>
+    <kT> 2.53E-8 </kT>
+    <order>0</order>
+    <fissionable>false</fissionable>
+
+    <!-- Total is the transport in the benchmark -->
+    <total>      8.52325E-2 2.17460E-1  </total>
+    <absorption> 1.74439E-2 1.82224E-1 </absorption>
+    <scatter>
+      6.77241E-2 6.45461E-5
+      0.00000000 3.52358E-2
+    </scatter>
+
+  </xsdata>
+
+  <xsdata>
+    <name>Empty.71c</name>
+    <kT> 2.53E-8 </kT>
+    <order>0</order>
+    <fissionable>false</fissionable>
+
+    <!-- Total is the transport in the benchmark -->
+    <total>      1.28407E-2 1.20676E-2  </total>
+    <absorption> 4.65132E-5 1.32890E-3 </absorption>
+    <scatter>
+      1.27700E-2 2.40997E-5
+      0.00000000 1.07387E-2
+    </scatter>
+
+  </xsdata>
+
+</library>

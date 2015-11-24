@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<geometry>
+  <!-- Definitions of Surfaces -->
+  <!-- Begin with problem boundaries -->
+  <surface id="10" type="x-plane" coeffs="0.0"  boundary="reflective" />
+  <surface id="15" type="x-plane" coeffs="25.0" boundary="vacuum" />
+  <surface id="20" type="y-plane" coeffs="0.0"  boundary="reflective" />
+  <surface id="25" type="y-plane" coeffs="25.0" boundary="vacuum" />
+  <surface id="30" type="z-plane" coeffs="0.0"  boundary="reflective" />
+  <surface id="35" type="z-plane" coeffs="25.0" boundary="vacuum" />
+
+  <!-- Now define region-specific surfaces -->
+  <surface id="11" type="x-plane" coeffs="15.0" />
+  <surface id="12" type="x-plane" coeffs="20.0" />
+  <surface id="21" type="y-plane" coeffs="5.0"  />
+  <surface id="22" type="y-plane" coeffs="15.0" />
+  <surface id="31" type="z-plane" coeffs="15.0" />
+
+  <!-- Definition of Cells -->
+  <cell id="1" material="1" region="10 -11 20 -22 30 -31" />  <!-- Core -->
+  <cell id="2" material="2" region="11 -12 20 -21 30 -35" />  <!-- CR/Void -->
+  <cell id="3" material="3" region="(10 -15 20 -25 30 -35) ~(11 -12 -21) ~(-11 -22 -31)" />  <!-- Reflector -->
+
+</geometry>
