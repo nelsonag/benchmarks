@@ -3,7 +3,7 @@
 
   <tally id="1">
     <filter type="mesh" bins="1" />
-    <filter type="energy" bins="1.0E-11 0.68256E-6 10.0"/>
+    <filter type="energy" bins="1.0E-11 9.61120E-4 8.65170E-2 1.3534 10.0"/>
     <scores>flux fission</scores>
   </tally>
 
@@ -11,8 +11,8 @@
     <id>1</id>
     <type>regular</type>
     <lower_left> 0.0 0.0 0.0 </lower_left>
-    <upper_right> 25.0 25.0 25.0 </upper_right>
-    <dimension> 10 10 10 </dimension>
+    <upper_right> 160.0 160.0 9.0 </upper_right>
+    <dimension> 28 28 30 </dimension>
   </mesh>
 
   <assume_separate>false</assume_separate>

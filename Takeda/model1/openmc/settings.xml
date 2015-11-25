@@ -3,9 +3,9 @@
 
   <!-- Parmeters for criticality calculation -->
   <eigenvalue>
-    <batches>5000</batches>
+    <batches>20000</batches>
     <inactive>500</inactive>
-    <particles>1000</particles>
+    <particles>20000</particles>
   </eigenvalue>
 
   <source>

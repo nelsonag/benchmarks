@@ -9,7 +9,7 @@
 
   <mesh>
     <id>1</id>
-    <type>rectangular</type>
+    <type>regular</type>
     <lower_left> 0.0 0.0 0.0 </lower_left>
     <upper_right> 70.0 70.0 150.0 </upper_right>
     <dimension> 28 28 30 </dimension>
