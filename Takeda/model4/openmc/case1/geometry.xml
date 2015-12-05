@@ -1,0 +1,451 @@
+<?xml version="1.0"?>
+<geometry>
+  <!-- Definition of Cells -->
+  <cell id="1"  material="1"  universe="1" />  <!-- Steel -->
+  <cell id="2"  material="2"  universe="2" />  <!-- Axial Blanket -->
+  <cell id="3"  material="3"  universe="3" />  <!-- Axial Reflector -->
+  <cell id="4"  material="4"  universe="4" />  <!-- Test Zone -->
+  <cell id="5"  material="5"  universe="5" />  <!-- Driver w/o Mod -->
+  <cell id="6"  material="6"  universe="6" />  <!-- Driver w/ Mod -->
+  <cell id="7"  material="7"  universe="7" />  <!-- Reflector w/o Mod -->
+  <cell id="8"  material="8"  universe="8" />  <!-- Reflector w/ Mod -->
+  <cell id="9"  material="9"  universe="9" />  <!-- KNK-1 Reflector -->
+  <cell id="10" material="10" universe="10" />  <!-- Na/Steel Zone -->
+  <cell id="11" material="11" universe="11" />  <!-- CR -->
+  <cell id="12" material="12" universe="12" />  <!-- CRP -->
+
+  <!-- Define outer void -->
+  <cell id="99" universe="99" material="void" />
+
+  <!-- Define layers of lattices -->
+  <!-- Lower Steel Region -->
+  <hex_lattice id="100">
+    <outer>99</outer>
+    <center> 0.0 0.0 </center>
+    <pitch> 12.99 </pitch>
+    <n_rings> 8 </n_rings>
+    <universes>
+                    10
+                  10  10
+                10   9  10
+              10   9   9  10
+            10   9   8   9  10
+          10   9   8   8   9  10
+        10   9   8   7   8   9  10
+      10   9   8   7   7   8   9  10
+         9   8   7   1   7   8   9
+      10   8   7   1   1   7   8  10
+         9   7   1   1   1   7   9
+      10   8   1   1   1   1   8  10
+         9   7   1   1   1   7   9
+      10   8   1   1   1   1   8  10
+         9   7   1   1   1   7   9
+      10   8   1   1   1   1   8  10
+         9   7   1   1   1   7   9
+      10   8   1   1   1   1   8  10
+         9   7   1   1   1   7   9
+      10   8   7   1   1   7   8  10
+         9   8   7   1   7   8   9
+      10   9   8   7   7   8   9  10
+        10   9   8   7   8   9  10
+          10   9   8   8   9  10
+            10   9   8   9  10
+              10   9   9  10
+                10   9  10
+                  10  10
+                    10
+    </universes>
+  </hex_lattice>
+
+  <!-- Lower Axial Reflector Region -->
+  <hex_lattice id="101">
+    <outer>99</outer>
+    <center> 0.0 0.0 </center>
+    <pitch> 12.99 </pitch>
+    <n_rings> 8 </n_rings>
+    <universes>
+                    10
+                  10  10
+                10   9  10
+              10   9   9  10
+            10   9   8   9  10
+          10   9   8   8   9  10
+        10   9   8   7   8   9  10
+      10   9   8   7   7   8   9  10
+         9   8   7   3   7   8   9
+      10   8   7   3   3   7   8  10
+         9   7   3   3   3   7   9
+      10   8   3   1   1   3   8  10
+         9   7   3   2   3   7   9
+      10   8   3   2   2   3   8  10
+         9   7   1   2   1   7   9
+      10   8   3   2   2   3   8  10
+         9   7   3   2   3   7   9
+      10   8   3   1   1   3   8  10
+         9   7   3   3   3   7   9
+      10   8   7   3   3   7   8  10
+         9   8   7   3   7   8   9
+      10   9   8   7   7   8   9  10
+        10   9   8   7   8   9  10
+          10   9   8   8   9  10
+            10   9   8   9  10
+              10   9   9  10
+                10   9  10
+                  10  10
+                    10
+    </universes>
+  </hex_lattice>
+
+  <!-- Unrodded Active Core Region -->
+  <hex_lattice id="102">
+    <outer>99</outer>
+    <center> 0.0 0.0 </center>
+    <pitch> 12.99</pitch>
+    <n_rings> 8 </n_rings>
+    <universes>
+                    10
+                  10  10
+                10   9  10
+              10   9   9  10
+            10   9   8   9  10
+          10   9   8   8   9  10
+        10   9   8   7   8   9  10
+      10   9   8   7   7   8   9  10
+         9   8   7   6   7   8   9
+      10   8   7   6   6   7   8  10
+         9   7   6   5   6   7   9
+      10   8   6  12  12   6   8  10
+         9   7   5   4   5   7   9
+      10   8   6   4   4   6   8  10
+         9   7  12   4  12   7   9
+      10   8   6   4   4   6   8  10
+         9   7   5   4   5   7   9
+      10   8   6  12  12   6   8  10
+         9   7   6   5   6   7   9
+      10   8   7   6   6   7   8  10
+         9   8   7   6   7   8   9
+      10   9   8   7   7   8   9  10
+        10   9   8   7   8   9  10
+          10   9   8   8   9  10
+            10   9   8   9  10
+              10   9   9  10
+                10   9  10
+                  10  10
+                    10
+    </universes>
+  </hex_lattice>
+
+  <!-- Rodded Active Core Region -->
+  <hex_lattice id="202">
+    <outer>99</outer>
+    <center> 0.0 0.0 </center>
+    <pitch> 12.99 </pitch>
+    <n_rings> 8 </n_rings>
+    <universes>
+                    10
+                  10  10
+                10   9  10
+              10   9   9  10
+            10   9   8   9  10
+          10   9   8   8   9  10
+        10   9   8   7   8   9  10
+      10   9   8   7   7   8   9  10
+         9   8   7   6   7   8   9
+      10   8   7   6   6   7   8  10
+         9   7   6   5   6   7   9
+      10   8   6  11  11   6   8  10
+         9   7   5   4   5   7   9
+      10   8   6   4   4   6   8  10
+         9   7  11   4  11   7   9
+      10   8   6   4   4   6   8  10
+         9   7   5   4   5   7   9
+      10   8   6  11  11   6   8  10
+         9   7   6   5   6   7   9
+      10   8   7   6   6   7   8  10
+         9   8   7   6   7   8   9
+      10   9   8   7   7   8   9  10
+        10   9   8   7   8   9  10
+          10   9   8   8   9  10
+            10   9   8   9  10
+              10   9   9  10
+                10   9  10
+                  10  10
+                    10
+    </universes>
+  </hex_lattice>
+
+  <!-- Withdrawn Upper Axial Reflector Region -->
+  <hex_lattice id="103">
+    <outer>99</outer>
+    <center> 0.0 0.0 </center>
+    <pitch> 12.99 </pitch>
+    <n_rings> 8 </n_rings>
+    <universes>
+                    10
+                  10  10
+                10   9  10
+              10   9   9  10
+            10   9   8   9  10
+          10   9   8   8   9  10
+        10   9   8   7   8   9  10
+      10   9   8   7   7   8   9  10
+         9   8   7   3   7   8   9
+      10   8   7   3   3   7   8  10
+         9   7   3   3   3   7   9
+      10   8   3  12  12   3   8  10
+         9   7   3   2   3   7   9
+      10   8   3   2   2   3   8  10
+         9   7  12   2  12   7   9
+      10   8   3   2   2   3   8  10
+         9   7   3   2   3   7   9
+      10   8   3  12  12   3   8  10
+         9   7   3   3   3   7   9
+      10   8   7   3   3   7   8  10
+         9   8   7   3   7   8   9
+      10   9   8   7   7   8   9  10
+        10   9   8   7   8   9  10
+          10   9   8   8   9  10
+            10   9   8   9  10
+              10   9   9  10
+                10   9  10
+                  10  10
+                    10
+    </universes>
+  </hex_lattice>
+
+  <!-- Half-Inserted Upper Axial Reflector Region -->
+  <hex_lattice id="153">
+    <outer>99</outer>
+    <center> 0.0 0.0 </center>
+    <pitch> 12.99 </pitch>
+    <n_rings> 8 </n_rings>
+    <universes>
+                    10
+                  10  10
+                10   9  10
+              10   9   9  10
+            10   9   8   9  10
+          10   9   8   8   9  10
+        10   9   8   7   8   9  10
+      10   9   8   7   7   8   9  10
+         9   8   7   3   7   8   9
+      10   8   7   3   3   7   8  10
+         9   7   3   3   3   7   9
+      10   8   3  11  11   3   8  10
+         9   7   3   2   3   7   9
+      10   8   3   2   2   3   8  10
+         9   7  11   2  11   7   9
+      10   8   3   2   2   3   8  10
+         9   7   3   2   3   7   9
+      10   8   3  11  11   3   8  10
+         9   7   3   3   3   7   9
+      10   8   7   3   3   7   8  10
+         9   8   7   3   7   8   9
+      10   9   8   7   7   8   9  10
+        10   9   8   7   8   9  10
+          10   9   8   8   9  10
+            10   9   8   9  10
+              10   9   9  10
+                10   9  10
+                  10  10
+                    10
+    </universes>
+  </hex_lattice>
+
+  <!-- Fully-Inserted Upper Axial Reflector Region -->
+  <hex_lattice id="203">
+    <outer>99</outer>
+    <center> 0.0 0.0 </center>
+    <pitch> 12.99 </pitch>
+    <n_rings> 8 </n_rings>
+    <universes>
+                    10
+                  10  10
+                10   9  10
+              10   9   9  10
+            10   9   8   9  10
+          10   9   8   8   9  10
+        10   9   8   7   8   9  10
+      10   9   8   7   7   8   9  10
+         9   8   7   3   7   8   9
+      10   8   7   3   3   7   8  10
+         9   7   3   3   3   7   9
+      10   8   3   1   1   3   8  10
+         9   7   3   2   3   7   9
+      10   8   3   2   2   3   8  10
+         9   7   1   2   1   7   9
+      10   8   3   2   2   3   8  10
+         9   7   3   2   3   7   9
+      10   8   3   1   1   3   8  10
+         9   7   3   3   3   7   9
+      10   8   7   3   3   7   8  10
+         9   8   7   3   7   8   9
+      10   9   8   7   7   8   9  10
+        10   9   8   7   8   9  10
+          10   9   8   8   9  10
+            10   9   8   9  10
+              10   9   9  10
+                10   9  10
+                  10  10
+                    10
+    </universes>
+  </hex_lattice>
+
+  <!-- Withdrawn Upper Steel Region -->
+  <hex_lattice id="104">
+    <outer>99</outer>
+    <center> 0.0 0.0 </center>
+    <pitch> 12.99 </pitch>
+    <n_rings> 8 </n_rings>
+    <universes>
+                    10
+                  10  10
+                10   9  10
+              10   9   9  10
+            10   9   8   9  10
+          10   9   8   8   9  10
+        10   9   8   7   8   9  10
+      10   9   8   7   7   8   9  10
+         9   8   7   1   7   8   9
+      10   8   7   1   1   7   8  10
+         9   7   1   1   1   7   9
+      10   8   1  12  12   1   8  10
+         9   7   1   1   1   7   9
+      10   8   1   1   1   1   8  10
+         9   7  12   1  12   7   9
+      10   8   1   1   1   1   8  10
+         9   7   1   1   1   7   9
+      10   8   1  12  12   1   8  10
+         9   7   1   1   1   7   9
+      10   8   7   1   1   7   8  10
+         9   8   7   1   7   8   9
+      10   9   8   7   7   8   9  10
+        10   9   8   7   8   9  10
+          10   9   8   8   9  10
+            10   9   8   9  10
+              10   9   9  10
+                10   9  10
+                  10  10
+                    10
+    </universes>
+  </hex_lattice>
+
+  <!-- Partially Inserted Upper Steel Region -->
+  <hex_lattice id="154">
+    <outer>99</outer>
+    <center> 0.0 0.0 </center>
+    <pitch> 12.99 </pitch>
+    <n_rings> 8 </n_rings>
+    <universes>
+                    10
+                  10  10
+                10   9  10
+              10   9   9  10
+            10   9   8   9  10
+          10   9   8   8   9  10
+        10   9   8   7   8   9  10
+      10   9   8   7   7   8   9  10
+         9   8   7   1   7   8   9
+      10   8   7   1   1   7   8  10
+         9   7   1   1   1   7   9
+      10   8   1  11  11   1   8  10
+         9   7   1   1   1   7   9
+      10   8   1   1   1   1   8  10
+         9   7  11   1  11   7   9
+      10   8   1   1   1   1   8  10
+         9   7   1   1   1   7   9
+      10   8   1  11  11   1   8  10
+         9   7   1   1   1   7   9
+      10   8   7   1   1   7   8  10
+         9   8   7   1   7   8   9
+      10   9   8   7   7   8   9  10
+        10   9   8   7   8   9  10
+          10   9   8   8   9  10
+            10   9   8   9  10
+              10   9   9  10
+                10   9  10
+                  10  10
+                    10
+    </universes>
+  </hex_lattice>
+
+  <!-- Fully Inserted Upper Steel Region -->
+  <hex_lattice id="204">
+    <outer>99</outer>
+    <center> 0.0 0.0 </center>
+    <pitch> 12.99 </pitch>
+    <n_rings> 8 </n_rings>
+    <universes>
+                    10
+                  10  10
+                10   9  10
+              10   9   9  10
+            10   9   8   9  10
+          10   9   8   8   9  10
+        10   9   8   7   8   9  10
+      10   9   8   7   7   8   9  10
+         9   8   7   1   7   8   9
+      10   8   7   1   1   7   8  10
+         9   7   1   1   1   7   9
+      10   8   1   1   1   1   8  10
+         9   7   1   1   1   7   9
+      10   8   1   1   1   1   8  10
+         9   7   1   1   1   7   9
+      10   8   1   1   1   1   8  10
+         9   7   1   1   1   7   9
+      10   8   1   1   1   1   8  10
+         9   7   1   1   1   7   9
+      10   8   7   1   1   7   8  10
+         9   8   7   1   7   8   9
+      10   9   8   7   7   8   9  10
+        10   9   8   7   8   9  10
+          10   9   8   8   9  10
+            10   9   8   9  10
+              10   9   9  10
+                10   9  10
+                  10  10
+                    10
+    </universes>
+  </hex_lattice>
+
+  <!-- Build axial surfaces so we can start stacking lattices -->
+  <surface id="30" type="z-plane" coeffs="0.0"   boundary="vacuum" />
+  <surface id="31" type="z-plane" coeffs="45.0" />
+  <surface id="32" type="z-plane" coeffs="65.0" />
+  <surface id="33" type="z-plane" coeffs="95.0" />
+  <surface id="34" type="z-plane" coeffs="125.0" />
+  <surface id="35" type="z-plane" coeffs="145.0" />
+  <surface id="36" type="z-plane" coeffs="155.0" />
+  <surface id="37" type="z-plane" coeffs="190.0" boundary="vacuum" />
+
+  <!-- Build xy surfaces for problem boundaries -->
+  <surface id="10" type="x-plane" coeffs="-100" boundary="vacuum" />
+  <surface id="11" type="x-plane" coeffs="100"  boundary="vacuum" />
+  <surface id="20" type="y-plane" coeffs="-100" boundary="vacuum" />
+  <surface id="21" type="y-plane" coeffs="100"  boundary="vacuum" />
+
+  <!-- Build cells for lattices, bottom up -->
+  <!-- For Case 1: Withdrawn Rod -->
+  <cell id="90" fill="100" region="10 -11 20 -21 30 -31" />
+  <cell id="91" fill="101" region="10 -11 20 -21 31 -32" />
+  <cell id="92" fill="102" region="10 -11 20 -21 32 -34" />
+  <cell id="93" fill="103" region="10 -11 20 -21 34 -35" />
+  <cell id="94" fill="104" region="10 -11 20 -21 35 -37" />
+
+  <!-- For Case 2: Partial-Insertion -->
+  <!-- <cell id="90" fill="100" region="10 -11 20 -21 30 -31" />
+  <cell id="91" fill="101" region="10 -11 20 -21 31 -32" />
+  <cell id="92" fill="102" region="10 -11 20 -21 32 -33" />
+  <cell id="93" fill="202" region="10 -11 20 -21 33 -34" />
+  <cell id="94" fill="153" region="10 -11 20 -21 34 -35" />
+  <cell id="95" fill="154" region="10 -11 20 -21 35 -36" />
+  <cell id="96" fill="204" region="10 -11 20 -21 36 -37" /> -->
+
+  <!-- For Case 3: Full-Insertion -->
+  <!-- <cell id="90" fill="100" region="10 -11 20 -21 30 -31" />
+  <cell id="91" fill="101" region="10 -11 20 -21 31 -32" />
+  <cell id="92" fill="202" region="10 -11 20 -21 32 -34" />
+  <cell id="93" fill="203" region="10 -11 20 -21 34 -35" />
+  <cell id="94" fill="204" region="10 -11 20 -21 35 -37" /> -->
+
+</geometry>

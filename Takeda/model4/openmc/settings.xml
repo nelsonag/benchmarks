@@ -11,8 +11,8 @@
   <source>
     <space type="box">
       <parameters>
-         0.0  0.0  0.0
-        120.0 120.0 55.0
+        -45 -45  65.0
+         45  45 125.0
       </parameters>
     </space>
   </source>

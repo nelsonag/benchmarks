@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<materials>
+
+  <default_xs>71c</default_xs>
+
+  <!-- Steel-->
+  <material id="1">
+    <density units="macro" />
+    <macroscopic name="Steel" />
+  </material>
+
+  <!-- Axial Blanket -->
+  <material id="2">
+    <density units="macro" />
+    <macroscopic name="AxBlank" />
+  </material>
+
+  <!-- Axial Reflector -->
+  <material id="3">
+    <density units="macro" />
+    <macroscopic name="AxRefl" />
+  </material>
+
+  <!-- Test Zone Blanket -->
+  <material id="4">
+    <density units="macro" />
+    <macroscopic name="Test" />
+  </material>
+
+  <!-- Driver w/o Moderator -->
+  <material id="5">
+    <density units="macro" />
+    <macroscopic name="DrvWo" />
+  </material>
+
+  <!-- Driver w/ Moderator -->
+  <material id="6">
+    <density units="macro" />
+    <macroscopic name="DrvW" />
+  </material>
+
+  <!-- Reflector w/o Moderator-->
+  <material id="7">
+    <density units="macro" />
+    <macroscopic name="ReflWo" />
+  </material>
+
+  <!-- Reflector w/ Moderator-->
+  <material id="8">
+    <density units="macro" />
+    <macroscopic name="ReflW" />
+  </material>
+
+  <!-- KNK-1 Reflector -->
+  <material id="9">
+    <density units="macro" />
+    <macroscopic name="KNK1" />
+  </material>
+
+  <!-- Na/Steel Zone-->
+  <material id="10">
+    <density units="macro" />
+    <macroscopic name="NaSteel" />
+  </material>
+
+  <!-- Control Rod-->
+  <material id="11">
+    <density units="macro" />
+    <macroscopic name="CR" />
+  </material>
+
+  <!-- Control Rod Position-->
+  <material id="12">
+    <density units="macro" />
+    <macroscopic name="CRP" />
+  </material>
+
+</materials>
