@@ -11,7 +11,8 @@
   <cell id="8" material="8" universe="8" />  <!-- Empty -->
 
   <!-- Define layers of lattices -->
-  <!-- Lower blanket region (w/ CRP) -->
+
+  <!-- Lower core/blanket region -->
   <lattice id="100">
     <outer>0</outer>
     <dimension> 32 32 </dimension>
@@ -53,7 +54,7 @@
     </universes>
   </lattice>
 
-  <!-- Lower core lattice -->
+  <!-- Core lattice -->
   <lattice id="101">
     <outer>0</outer>
     <dimension> 32 32 </dimension>
@@ -95,7 +96,7 @@
     </universes>
   </lattice>
 
-  <!-- Upper core lattice -->
+  <!-- Axial Blanket lattice -->
   <lattice id="102">
     <outer>0</outer>
     <dimension> 32 32 </dimension>
@@ -137,7 +138,7 @@
     </universes>
   </lattice>
 
-  <!-- Upper blanket region (w/ CRP) -->
+  <!-- Axial Reflector -->
   <lattice id="103">
     <outer>0</outer>
     <dimension> 32 32 </dimension>
