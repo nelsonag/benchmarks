@@ -2,10 +2,12 @@
 <settings>
 
   <!-- Parmeters for criticality calculation -->
-  <eigenvalue>
+  <eigenvalue><!--
     <batches>20000</batches>
     <inactive>500</inactive>
     <particles>20000</particles>
+-->
+<batches>1000</batches><inactive>500</inactive><particles>10000</particles>
   </eigenvalue>
 
   <source>
